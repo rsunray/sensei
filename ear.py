@@ -5,17 +5,16 @@ from nltk.tokenize.api import StringTokenizer
 from nltk.tokenize.moses import MosesTokenizer
 
 """ input """
-aMessage = "Hi, how are you?"
+aMessage = "This is a cooool #dummysmiley: :-) :-P <3 and some arrows < > -> <--"
 
 """ process """
 raw = aMessage
-stringTokenizer = StringTokenizer()
-mosesTokenizer = MosesTokenizer()
+sTokenizer = StringTokenizer()
+mTokenizer = MosesTokenizer()
 sTokenizer._string = " "
-mTokenizer._string = " "
-sTokens = stringTokenizer.tokenize(raw)
-mTokens = mosesTokenizer.tokenize(raw)
+sTokens = sTokenizer.tokenize(raw)
+mTokens = mTokenizer.tokenize(raw)
 
 """ output """
-print(sSokens)
+print(sTokens)
 print(mTokens)
